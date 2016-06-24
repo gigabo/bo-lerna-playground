@@ -1,5 +1,11 @@
 {
   "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes && lerna run clean",
+    "repro": "npm install && npm run clean && npm run bootstrap && npm test",
+    "test": "lerna run test"
+  },
   "devDependencies": {
     "lerna": "2.0.0-beta.22"
   }

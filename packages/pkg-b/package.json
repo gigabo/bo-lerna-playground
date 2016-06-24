@@ -1,0 +1,11 @@
+{
+  "name": "pkg-b",
+  "version": "0.0.1",
+  "scripts": {
+    "prepublish": "node -e 'require(\"pkg-a\")()'",
+    "test": "npm run prepublish"
+  },
+  "devDependencies": {
+    "pkg-a": "^0.0.1"
+  }
+}

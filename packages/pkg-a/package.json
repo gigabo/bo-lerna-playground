@@ -1,0 +1,9 @@
+{
+  "name": "pkg-a",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -f index.js",
+    "prepublish": "cp index.src.js index.js"
+  }
+}
